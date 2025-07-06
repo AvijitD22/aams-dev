@@ -1,0 +1,75 @@
+/*  */
+
+.top-shadow-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height for smoother blending */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 30%,
+    rgba(0, 0, 0, 0.15) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.dark-text-shadow{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.box-content.right-side{
+  left: 20% !important;
+}
+
+@media (max-width: 991.98px) {
+  .visibility-hidden-below-lg {
+    visibility: hidden !important;
+  }
+}
+
+/* Match container's horizontal padding at each breakpoint */
+.px-container {
+  padding-left: var(--bs-gutter-x, 1.5rem);
+  padding-right: var(--bs-gutter-x, 1.5rem);
+}
+
+@media (min-width: 576px) {
+  .px-container {
+    padding-left: calc((100% - 540px) / 2);
+    padding-right: calc((100% - 540px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .px-container {
+    padding-left: calc((100% - 720px) / 2);
+    padding-right: calc((100% - 720px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .px-container {
+    padding-left: calc((100% - 960px) / 2);
+    padding-right: calc((100% - 960px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .px-container {
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+}
+
+@media (min-width: 1400px) {
+  .px-container {
+    padding-left: calc((100% - 1320px) / 2);
+    padding-right: calc((100% - 1320px) / 2);
+  }
+}
+
